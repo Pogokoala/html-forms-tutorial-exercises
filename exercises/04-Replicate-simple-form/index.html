@@ -7,34 +7,41 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<style>
-		h2 {
-			/* display: flex; */
-			/* text-align: center; */
+		span {
+			text-align: center;
 			border-style: ridge;
 			background-color: rgb(179, 161, 226);
+			display:absolute;
+			flex-direction: row;
+			justify-content: space-between;
+			padding-left: 100px;
+			padding-right: 100px;
+
 
 		}
 		p {
 			/* display: flex; */
 			flex-direction: column;
+			border-style: ridge;
 		}
 		form {
+			/* display:flex; */
 			display: absolute;
 			flex-direction: row;
 			justify-content: space-between;
 			border-style: ridge;
-			
-   		 	word-wrap: break-word;
+			word-wrap: break-word;
+			margin-left: 800px;
+			margin-right: 800px;
 		}
-		textarea {
+		/* textarea {
 			padding: 10%;
-
-		}
+		} */
 	</style>
 	<body>
 		<form>
-			<h2>Name Value</h2>
-			<br />
+			<span>Name</span>
+			<span>Value<span>
 			<p>Name <input type="text" name="name" value="John Doe" /></p>
 			<p>Sex <input type="radio" />Male <input type="radio" />Female</p>
 			<p>Eye Color <select name="EyeColor">
